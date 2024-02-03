@@ -21,7 +21,6 @@ class TestTriangles(unittest.TestCase):
     def testInvalidInputA(self): 
         self.assertEqual(classifyTriangle(100,200,400),'InvalidInput','All values are greater than 200')
 
-    # These tests check for invalid inputs
     def testInvalidInputB(self): 
         self.assertEqual(classifyTriangle(-2,-1,-5),'InvalidInput','All values are lower than 0')
 
@@ -29,7 +28,6 @@ class TestTriangles(unittest.TestCase):
     def testNotATriangleA(self): 
         self.assertEqual(classifyTriangle(1,2,3),'NotATriangle','1+2 is not greater than 3')
 
-    # These tests check for valid triangles
     def testNotATriangleB(self): 
         self.assertEqual(classifyTriangle(3,4,8),'NotATriangle','3 + 4 is not greater than 8')
 
