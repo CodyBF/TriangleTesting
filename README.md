@@ -1,1 +1,1 @@
-[![build status of master](https://travis-ci.org/CodyBF/TriangleTesting.svg?branch=master)](https://travis-ci.org/CodyBF/TriangleTesting)
+[![Build Status](https://app.travis-ci.com/CodyBF/TriangleTesting.svg?branch=main)](https://app.travis-ci.com/CodyBF/TriangleTesting)
