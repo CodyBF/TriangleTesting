@@ -26,7 +26,7 @@ class TestTriangles(unittest.TestCase):
 
     # These tests check for valid triangles
     def testNotATriangleA(self): 
-        self.assertEqual(classifyTriangle(1,2,3),'NotATriangle','1+2 is not greater than 3')
+        self.assertEqual(classifyTriangle(1,2,3),'NotATriangle','1 + 2 is not greater than 3')
 
     def testNotATriangleB(self): 
         self.assertEqual(classifyTriangle(3,4,8),'NotATriangle','3 + 4 is not greater than 8')
@@ -36,11 +36,11 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual(classifyTriangle(3,4,5),'Right','3,4,5 is a Right triangle')
 
     def testRightTriangleB(self): 
-        self.assertEqual(classifyTriangle(5,3,4),'Right','5,3,4 is a Right triangle')
+        self.assertEqual(classifyTriangle(5,12,13),'Right','5,12,13 is a Right triangle')
     
     # These tests check for scalene triangles
     def testScaleneTriangleA(self): 
-        self.assertEqual(classifyTriangle(2,4,7),'Scalene','3,5,7 is a Scalene triangle')
+        self.assertEqual(classifyTriangle(3,5,7),'Scalene','3,5,7 is a Scalene triangle')
     
     def testScaleneTriangleB(self): 
         self.assertEqual(classifyTriangle(4,11,8),'Scalene','4,11,8 is a Scalene triangle')
