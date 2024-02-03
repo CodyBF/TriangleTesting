@@ -19,7 +19,7 @@ class TestTriangles(unittest.TestCase):
 
     # These tests check for invalid inputs
     def testInvalidInputA(self): 
-        self.assertEqual(classifyTriangle(100,200,400),'InvalidInput','All values are greater than 200')
+        self.assertEqual(classifyTriangle(100,150,201),'InvalidInput','Not all values are less than 200')
 
     def testInvalidInputB(self): 
         self.assertEqual(classifyTriangle(-2,-1,-5),'InvalidInput','All values are lower than 0')
