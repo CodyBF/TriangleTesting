@@ -55,3 +55,24 @@ def classifyTriangle(a,b,c):
         return 'Scalene'
     else:
         return 'Isoceles'
+
+
+## All Issues found in code
+# line 34, the '=' symbols are unnecessary. 
+
+# line 34, the if statement for 'b<=b' will always result in a return
+# of 'InvalidInput'
+
+# line 40, the semicolon after 'InvalidInput' is unnecessary
+
+# line 46, the logic for deciding if the inputs are a triangle is wrong,
+# change the '-' symbols to '+' symbols.
+
+# line 50, the logic for equilateral triangles is wrong,
+# its missing a check for the value of c
+
+# line 52, the logic for right triangle is wrong, instead of multiplying
+# our values by 2 with a single '*' we should write it as 'a ** 2)
+
+# line 54, the logic for scalene triangles is wrong, last check should
+# be 'a!=c'
